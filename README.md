@@ -16,19 +16,19 @@ Generate a GPG key-pair if you don't have one already and export it to a public 
 
 Clone the repositories:
 
-	git clone https://github.com/Yura80/pikvm-rock64.git
-	git clone https://github.com/Yura80/os.git
-	git clone https://github.com/Yura80/packages.git
+	git clone https://github.com/yude/pikvm-rock64.git
+	git clone https://github.com/yude/os.git
+	git clone https://github.com/yude/packages.git
 	
 Build the packages:
     
     cd packages
-    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make buildenv BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/yude/pi-builder
     make update BOARD=generic ARCH=aarch64
-    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
-    make buildenv BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make packages-generic BOARD=generic ARCH=aarch64 _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/yude/pi-builder
+    make buildenv BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/yude/pi-builder
     make update BOARD=generic ARCH=arm
-    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/Yura80/pi-builder
+    make packages-generic BOARD=generic ARCH=arm _REPO_KEY=XXXXXXXXXXXXXXXX _PIBUILDER_REPO=https://github.com/yude/pi-builder
 
 
 Upload the repository to your web server:
